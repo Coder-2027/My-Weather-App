@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weather App</h1>
+        <div class="tab-container">
+            <div class="user-tab">
+                <input type="radio" name="tab" id="userTab" checked>
+                <label for="userTab">Your Weather</label>
+            </div>
+            <div class="search-tab">
+                <input type="radio" name="tab" id="searchTab">
+                <label for="searchTab">Search Weather</label>
+            </div>
+        </div>
+
+        <div class="loading-container">
+            <img src="https://github.com/Coder-2027/weatherAppProject-FORKED/blob/master/assets/loading.gif?raw=true" alt="">
+            <p>Loading...</p>
+        </div>
+        
+        <div class="grant-access-container">
+            <img src="https://codehelp-weather-app.netlify.app/assets/location.png" alt="">
+            <h2>Grant Location Access</h2>
+            <p>Allow Access To Get Weather Information</p>
+            <button class="grant-access">Grant Access</button>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search For City...">
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="user-weather-info">
+            <div class="city">
+                <div class="city-name"></div>
+                <img src="" alt="" class="country-flag">
+            </div>
+            <div class="desc"></div>
+            <img src="" alt="" class="desc-img">
+            <div class="temp"></div>
+
+            <div class="other-info">
+                <div class="windspeed card">
+                    <img src="https://codehelp-weather-app.netlify.app/assets/wind.png" alt="">
+                    <p>Windspeed</p>
+                    <div class="speed-value data"></div>
+                </div>
+                <div class="humidity card">
+                    <img src="https://codehelp-weather-app.netlify.app/assets/humidity.png" alt="">
+                    <p>Humidity</p>
+                    <div class="humidity-value data"></div>
+                </div>
+                <div class="clouds card">
+                    <img src="https://codehelp-weather-app.netlify.app/assets/cloud.png" alt="">
+                    <p>Clouds</p>
+                    <div class="clouds-percent data"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="error-page">
+            <img src="https://github.com/Coder-2027/weatherAppProject-FORKED/blob/master/assets/not-found.png?raw=true" alt="">
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
